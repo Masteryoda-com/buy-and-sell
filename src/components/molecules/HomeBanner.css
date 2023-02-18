@@ -1,0 +1,10 @@
+.carousel-inner {
+    height: 300px;
+    display: block;
+    
+    
+    
+}
+.d-block w-100 {
+    object-fit: cover;
+}

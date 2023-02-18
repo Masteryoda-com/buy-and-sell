@@ -1,0 +1,27 @@
+#navbar {
+    background-color: rgb(13,110,253) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px !important;
+}
+.navbar-brand img {
+    width : 120px;
+}
+.nav-item {
+    color: #dedede;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.nav-item:hover {
+    color: var(--color-primary);
+}
+.navbar-nav a {
+    position: relative;
+}
+.navbar-nav a svg {
+    width: 20px;
+}
+.navbar-nav a .badge {
+    position: absolute;
+    right: -12px;
+    font-size: 10px;
+    top: -8px;
+}
