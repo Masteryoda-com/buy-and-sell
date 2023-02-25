@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import { Badge } from 'react-bootstrap';
 
-function CollapsibleExample() {
+function CollapsibleExample({cartList}) {
   return (
     <Navbar id='navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>

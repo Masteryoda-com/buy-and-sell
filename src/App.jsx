@@ -14,19 +14,26 @@ import {
   Route
 } from "react-router-dom";
 import ProductDetail from './components/Pages/ProductDetail'
+import Cart from './components/Pages/Cart'
 
 function App() {
+  const [cartList, setCartList] = React.useState([])
+
+  const addToCart = (item) => {
+    setCartList([...cartList, item])
+  }
+
+  const removeFromCart = (item) => {
+    setCartList(cartList.filter((cartItem) => cartItem.id !== item.id))
+  }
 
   return (
     <div>
 
       <Router>
-        <Navbar/>
-
-
-        {/* <Link to="/">Home</Link> <br />
-        <Link to="/about">About</Link> <br />
-        <Link to="/contact">Contact</Link> <br /> */}
+        <Navbar
+          cartList={cartList}
+        />
 
 
         <Switch>
@@ -43,7 +50,15 @@ function App() {
             <Signup/>
           </Route>
           <Route path="/product/:id">
-            <ProductDetail/>
+            <ProductDetail
+              addToCart={addToCart}
+            />
+          </Route>
+          <Route path="/cart">
+            <Cart
+              cartList={cartList}
+              removeFromCart={removeFromCart}
+            />
           </Route>
           <Route path="/">
             <Home />

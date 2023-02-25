@@ -11,21 +11,8 @@ function ItermList() {
 
   React.useEffect( () => {
 
-    //  Get API call
-    // fetch("https://buy-and-sell-f5fe8-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     let itemsList = [];
-    //     for (let key in data) {
-    //       itemsList.push(data[key])
-    //     }
-    //     setItemsList(itemsList)
-    //     return data;
-    //   })
-
-    
     // Get API call using axios
-    axios.get("https://buy-and-sell-f5fe8-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
+    axios.get("https://buy-und-sell-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
       .then(response => {
         let itemsList = [];
         for (let key in response.data) {

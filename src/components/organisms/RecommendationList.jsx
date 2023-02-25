@@ -11,7 +11,7 @@ function RecommendationList() {
   const [itemsList, setItemsList] = React.useState([]);
   React.useEffect( () => {
     // Get API call using axios
-    axios.get("https://buy-and-sell-f5fe8-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
+    axios.get("https://buy-und-sell-default-rtdb.asia-southeast1.firebasedatabase.app/item-list.json")
       .then(response => {
         let itemsList = [];
         for (let key in response.data) {
