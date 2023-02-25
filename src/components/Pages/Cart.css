@@ -5,6 +5,9 @@
     margin: 30px 0;
     border-bottom: 1px solid #ccc;
 }
+.cart-empty {
+    text-align: center;    
+}
 .cart-body {
     display: flex;
     justify-content: flex-start;

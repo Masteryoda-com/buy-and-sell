@@ -14,7 +14,7 @@ function Cart({ cartList, removeFromCart }) {
           cartList.length === 0
             ? (
               <div className="cart-empty">
-                <h5>is empty</h5>
+                <h5>Your Cart is empty</h5>
               </div>
             )
             : (
